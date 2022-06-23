@@ -10,6 +10,6 @@ fun setFullScreen (window: Window){
 
 fun lightStatusBar(window: Window, isLight: Boolean = true, isLightNav: Boolean = true){
     val wic = WindowInsetsControllerCompat (window, window.decorView)
-    wic.isAppearanceLightStatusBars = isLight
+/*    wic.isAppearanceLightStatusBars = isLight*/
     wic.isAppearanceLightNavigationBars = isLightNav
 }

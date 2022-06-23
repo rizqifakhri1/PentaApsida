@@ -9,4 +9,13 @@
     <color name="white">#FFFFFFFF</color>
     <color name="white_trans">#83FFFFFF</color>
     <color name="transparant">#00FFFFFF</color>
+    <color name="biru">#0094D9</color>
+    <color name="biru_tua">#0064D9</color>
+    <color name="hijau">#62CB9F</color>
+    <color name="hijau_dua">#26A1BC</color>
+    <color name="merah">#F94F46</color>
+    <color name="biru_tiga">#6279CB</color>
+    <color name="ungu">#986ECF</color>
+    <color name="merah_muda">#CB6262</color>
+    <color name="biru_empat">#4C70A5</color>
 </resources>
