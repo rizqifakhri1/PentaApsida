@@ -17,6 +17,7 @@
         app:layout_constraintBottom_toBottomOf="parent"/>
 
     <TextView
+        android:id="@+id/tv_text_motivasi"
         android:text="Jangan biarkan ucapan orang lain menjatuhkan mimpimu. Bungkam mulut mereka dengan prestasimu"
         android:gravity="center_vertical"
         android:fontFamily="@font/poppins_regular"

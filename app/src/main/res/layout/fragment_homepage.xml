@@ -71,17 +71,91 @@
             app:layout_constraintStart_toStartOf="@id/tv_halo"
             app:layout_constraintTop_toBottomOf="@id/tv_halo"/>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_motivasi"
-            android:layout_marginTop="16dp"
+
+
+        <HorizontalScrollView
+            android:id="@+id/list_motivasi"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:listitem="@layout/rv_motivasi"
-            android:orientation="horizontal"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_height="120dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:scrollbars="none"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/judul_motivasi" />
+            app:layout_constraintTop_toBottomOf="@id/judul_motivasi">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_motivasi_satu"
+                    android:text="Jangan biarkan ucapan orang lain menjatuhkan mimpimu. Bungkam mulut mereka dengan prestasimu."
+                    android:layout_width="320dp"
+                    android:layout_height="120dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:padding="16dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_kotak"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_motivasi_dua"
+                    android:text="Orang bijak belajar ketika mereka bisa. Orang bodoh belajar ketika mereka terpaksa. -Arthur Wellesley"
+                    android:layout_width="320dp"
+                    android:layout_height="120dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:padding="16dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_kotak"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="0dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_motivasi_satu"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_motivasi_tiga"
+                    android:text="Hiduplah seolah engkau mati besok. Belajarlah seolah engkau hidup selamanya. -Mahatma Gandhi"
+                    android:layout_width="320dp"
+                    android:layout_height="120dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:padding="16dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_kotak"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="0dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_motivasi_dua"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_lihat_semua"
+                    android:text="Lihat Semua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:padding="16dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_kotak"
+                    android:backgroundTint="@color/merah_muda"
+                    android:textColor="@color/white"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_motivasi_tiga"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </HorizontalScrollView>
 
         <ImageView
             android:id="@+id/bg_putih"
@@ -94,7 +168,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/rv_motivasi"
+            app:layout_constraintTop_toBottomOf="@id/list_motivasi"
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
@@ -164,7 +238,7 @@
             app:layout_constraintTop_toBottomOf="@id/tv_selamat_datang"/>
 
         <TextView
-            android:id="@+id/iv_see_all_motivasi"
+            android:id="@+id/tv_lihat_semua_menu"
             android:text="Lihat Semua"
             android:fontFamily="@font/poppins_regular"
             android:textSize="12dp"
