@@ -8,7 +8,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="60dp">
 
         <ImageView
@@ -19,7 +19,8 @@
             android:background="@drawable/bg_biru"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/image" />
 
         <ImageView
             android:id="@+id/obj_satu"
@@ -27,7 +28,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/image" />
 
         <ImageView
             android:src="@drawable/obj_dua"
@@ -35,20 +37,22 @@
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/obj_satu"
-            app:layout_constraintBottom_toTopOf="@id/bg_putih"/>
+            app:layout_constraintBottom_toTopOf="@id/bg_putih"
+            android:contentDescription="@string/image" />
 
         <ImageView
-            android:src="@drawable/logo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:src="@drawable/logo_putih"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginEnd="24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/tv_halo"
-            app:layout_constraintBottom_toBottomOf="@id/tv_selamat_datang"/>
+            app:layout_constraintBottom_toBottomOf="@id/tv_selamat_datang"
+            android:contentDescription="@string/image" />
 
         <TextView
             android:id="@+id/tv_halo"
-            android:text="Halo!"
+            android:text="@string/halo"
             android:fontFamily="@font/poppins_bold"
             android:textSize="24sp"
             android:textColor="@color/white"
@@ -61,7 +65,7 @@
 
         <TextView
             android:id="@+id/tv_selamat_datang"
-            android:text="Selamat Datang"
+            android:text="@string/selamat_datang"
             android:fontFamily="@font/poppins_regular"
             android:textSize="18sp"
             android:textColor="@color/white"
@@ -85,12 +89,12 @@
             app:layout_constraintTop_toBottomOf="@id/judul_motivasi">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent">
 
                 <TextView
                     android:id="@+id/tv_motivasi_satu"
-                    android:text="Jangan biarkan ucapan orang lain menjatuhkan mimpimu. Bungkam mulut mereka dengan prestasimu."
+                    android:text="@string/motivasi_satu"
                     android:layout_width="320dp"
                     android:layout_height="120dp"
                     android:fontFamily="@font/poppins_regular"
@@ -104,7 +108,7 @@
 
                 <TextView
                     android:id="@+id/tv_motivasi_dua"
-                    android:text="Orang bijak belajar ketika mereka bisa. Orang bodoh belajar ketika mereka terpaksa. -Arthur Wellesley"
+                    android:text="@string/motivasti_dua"
                     android:layout_width="320dp"
                     android:layout_height="120dp"
                     android:fontFamily="@font/poppins_regular"
@@ -119,7 +123,7 @@
 
                 <TextView
                     android:id="@+id/tv_motivasi_tiga"
-                    android:text="Hiduplah seolah engkau mati besok. Belajarlah seolah engkau hidup selamanya. -Mahatma Gandhi"
+                    android:text="@string/motivasi_tiga"
                     android:layout_width="320dp"
                     android:layout_height="120dp"
                     android:fontFamily="@font/poppins_regular"
@@ -134,7 +138,7 @@
 
                 <TextView
                     android:id="@+id/tv_lihat_semua"
-                    android:text="Lihat Semua"
+                    android:text="@string/lihat_semua"
                     android:layout_width="wrap_content"
                     android:layout_height="120dp"
                     android:fontFamily="@font/poppins_regular"
@@ -163,19 +167,19 @@
             android:layout_height="0dp"
             android:layout_marginTop="32dp"
             android:src="@drawable/bg_kotak"
-
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/list_motivasi"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.0"
+            android:contentDescription="@string/image" />
 
         <TextView
             android:id="@+id/judul_fitur"
-            android:text="Apa yang kamu cari?"
+            android:text="@string/apa_yang_kamu_cari"
             android:fontFamily="@font/poppins_bold"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textColor="@color/biru_empat"
             android:layout_marginTop="16dp"
             android:layout_marginHorizontal="24dp"
@@ -195,7 +199,8 @@
             android:layout_height="119dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/judul_fitur"/>
+            app:layout_constraintTop_toBottomOf="@id/judul_fitur"
+            android:contentDescription="@string/image" />
 
         <ImageView
             android:id="@+id/asset_meditasi"
@@ -204,13 +209,14 @@
             android:src="@drawable/asset_meditas"
             app:layout_constraintBottom_toBottomOf="@id/bg_meditasi"
             app:layout_constraintEnd_toEndOf="@id/bg_meditasi"
-            app:layout_constraintTop_toTopOf="@id/bg_meditasi" />
+            app:layout_constraintTop_toTopOf="@id/bg_meditasi"
+            android:contentDescription="@string/image" />
 
         <TextView
-            android:text="Yuk Meditasi"
+            android:text="@string/yuk_meditasi"
             android:textColor="@color/white"
             android:fontFamily="@font/poppins_bold"
-            android:textSize="24dp"
+            android:textSize="24sp"
             android:layout_width="0dp"
             android:layout_marginHorizontal="16dp"
             android:layout_height="wrap_content"
@@ -223,9 +229,9 @@
 
         <TextView
             android:id="@+id/judul_motivasi"
-            android:text="Motivasi harian buat kamu"
+            android:text="@string/motivasi_harian_buat_kamu"
             android:fontFamily="@font/poppins_bold"
-            android:textSize="14dp"
+            android:textSize="14sp"
             android:layout_marginTop="12dp"
             android:textColor="@color/biru_tiga"
             android:paddingVertical="2dp"
@@ -239,9 +245,9 @@
 
         <TextView
             android:id="@+id/tv_lihat_semua_menu"
-            android:text="Lihat Semua"
+            android:text="@string/lihat_semua"
             android:fontFamily="@font/poppins_regular"
-            android:textSize="12dp"
+            android:textSize="12sp"
             android:textColor="@color/white"
             android:layout_marginEnd="24dp"
             android:layout_width="wrap_content"
@@ -261,7 +267,8 @@
             android:layout_height="119dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/bg_meditasi"/>
+            app:layout_constraintTop_toBottomOf="@id/bg_meditasi"
+            android:contentDescription="@string/image" />
 
         <ImageView
             android:id="@+id/asset_olahraga"
@@ -272,13 +279,14 @@
             android:src="@drawable/asset_olahraga"
             app:layout_constraintBottom_toBottomOf="@id/bg_olahraga"
             app:layout_constraintStart_toStartOf="@id/bg_olahraga"
-            app:layout_constraintTop_toTopOf="@id/bg_olahraga" />
+            app:layout_constraintTop_toTopOf="@id/bg_olahraga"
+            android:contentDescription="@string/image" />
 
         <TextView
-            android:text="Olahraga"
+            android:text="@string/olahraga"
             android:textColor="@color/white"
             android:fontFamily="@font/poppins_bold"
-            android:textSize="24dp"
+            android:textSize="24sp"
             android:textAlignment="center"
             android:layout_width="0dp"
             android:layout_marginHorizontal="10dp"
@@ -298,7 +306,8 @@
             android:layout_height="119dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/bg_olahraga"/>
+            app:layout_constraintTop_toBottomOf="@id/bg_olahraga"
+            android:contentDescription="@string/image" />
 
         <ImageView
             android:id="@+id/asset_belajar"
@@ -308,13 +317,14 @@
             android:src="@drawable/asset_belajar"
             app:layout_constraintBottom_toBottomOf="@id/bg_belajar"
             app:layout_constraintEnd_toEndOf="@id/bg_belajar"
-            app:layout_constraintTop_toTopOf="@id/bg_belajar" />
+            app:layout_constraintTop_toTopOf="@id/bg_belajar"
+            android:contentDescription="@string/image" />
 
         <TextView
-            android:text="Belajar"
+            android:text="@string/belajar"
             android:textColor="@color/white"
             android:fontFamily="@font/poppins_bold"
-            android:textSize="24dp"
+            android:textSize="24sp"
             android:textAlignment="center"
             android:layout_width="0dp"
             android:layout_marginHorizontal="10dp"
@@ -337,7 +347,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/bg_diskusi"
-            app:layout_constraintTop_toBottomOf="@id/bg_belajar"/>
+            app:layout_constraintTop_toBottomOf="@id/bg_belajar"
+            android:contentDescription="@string/image" />
 
         <ImageView
             android:layout_width="180dp"
@@ -347,14 +358,15 @@
             android:src="@drawable/asset_kooperatif"
             app:layout_constraintBottom_toTopOf="@id/tv_kooperatif"
             app:layout_constraintEnd_toEndOf="@id/bg_kooperatif"
-            app:layout_constraintStart_toStartOf="@id/bg_kooperatif" />
+            app:layout_constraintStart_toStartOf="@id/bg_kooperatif"
+            android:contentDescription="@string/image" />
 
         <TextView
             android:id="@+id/tv_kooperatif"
-            android:text="Kooperatif"
+            android:text="@string/kooperatif"
             android:textColor="@color/white"
             android:fontFamily="@font/poppins_bold"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:textAlignment="center"
             android:layout_width="0dp"
             android:layout_marginBottom="16dp"
@@ -374,7 +386,8 @@
             android:layout_height="179dp"
             app:layout_constraintStart_toEndOf="@id/bg_kooperatif"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/bg_belajar"/>
+            app:layout_constraintTop_toBottomOf="@id/bg_belajar"
+            android:contentDescription="@string/image" />
 
         <ImageView
             android:layout_width="178dp"
@@ -383,14 +396,15 @@
             android:src="@drawable/asset_berdiskusi"
             app:layout_constraintBottom_toTopOf="@id/tv_diskusi"
             app:layout_constraintEnd_toEndOf="@id/tv_diskusi"
-            app:layout_constraintStart_toStartOf="@id/tv_diskusi" />
+            app:layout_constraintStart_toStartOf="@id/tv_diskusi"
+            android:contentDescription="@string/image" />
 
         <TextView
             android:id="@+id/tv_diskusi"
-            android:text="Diskusi"
+            android:text="@string/diskusi"
             android:textColor="@color/white"
             android:fontFamily="@font/poppins_bold"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:textAlignment="center"
             android:layout_width="0dp"
             android:layout_marginBottom="16dp"
