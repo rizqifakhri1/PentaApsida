@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ManfaatMeditasiFragment">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/bg_homescreen"
+        android:backgroundTint="@color/biru_tiga"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/image" />
+
+    <TextView
+        android:id="@+id/tv_meditasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Manfaat Meditasi"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:src="@drawable/ic_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="@id/tv_meditasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tv_meditasi"
+        android:contentDescription="@string/image" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:text="Teknik Meditasi Untuk Pemula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_meditasi"/>
+
+    <TextView
+        android:id="@+id/btn_konstrasi"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/bg_kotak"
+        android:backgroundTint="@color/biru_empat"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="Meditasi Konsentrasi"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc" />
+
+    <ImageView
+        android:id="@+id/btn_extend_konsentrasi"
+        android:src="@drawable/ic_extend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_konstrasi"
+        app:layout_constraintTop_toTopOf="@id/btn_konstrasi"
+        app:layout_constraintBottom_toBottomOf="@id/btn_konstrasi"
+        android:contentDescription="@string/image" />
+
+    <TextView
+        android:id="@+id/btn_kesadaran"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_kotak"
+        android:backgroundTint="@color/hijau"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="Meditasi Kesadaran"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_konstrasi" />
+
+    <ImageView
+        android:id="@+id/btn_extend_kesadaran"
+        android:src="@drawable/ic_extend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_kesadaran"
+        app:layout_constraintTop_toTopOf="@id/btn_kesadaran"
+        app:layout_constraintBottom_toBottomOf="@id/btn_kesadaran"
+        android:contentDescription="@string/image" />
+
+    <ImageView
+        android:src="@drawable/ill_meditasi_tiga"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:scaleType="fitStart"
+        app:layout_constraintTop_toBottomOf="@id/btn_kesadaran"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

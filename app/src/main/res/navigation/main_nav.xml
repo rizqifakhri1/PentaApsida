@@ -13,10 +13,77 @@
         <action
             android:id="@+id/action_homepageFragment_to_meditasiFragment"
             app:destination="@id/meditasiFragment" />
+        <action
+            android:id="@+id/action_homepageFragment_to_kooperatifFragment"
+            app:destination="@id/kooperatifFragment" />
+        <action
+            android:id="@+id/action_homepageFragment_to_berdiskusiFragment"
+            app:destination="@id/berdiskusiFragment" />
     </fragment>
     <fragment
         android:id="@+id/meditasiFragment"
         android:name="com.griding.pentaapsida.MeditasiFragment"
         android:label="fragment_meditasi"
-        tools:layout="@layout/fragment_meditasi" />
+        tools:layout="@layout/fragment_meditasi" >
+        <action
+            android:id="@+id/action_meditasiFragment_to_manfaatMeditasiFragment"
+            app:destination="@id/manfaatMeditasiFragment" />
+        <action
+            android:id="@+id/action_meditasiFragment_to_praktikMeditasiFragment"
+            app:destination="@id/praktikMeditasiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/manfaatMeditasiFragment"
+        android:name="com.griding.pentaapsida.ManfaatMeditasiFragment"
+        android:label="fragment_manfaat_meditasi"
+        tools:layout="@layout/fragment_manfaat_meditasi" >
+        <action
+            android:id="@+id/action_manfaatMeditasiFragment_to_kesadaranFragment"
+            app:destination="@id/kesadaranFragment" />
+        <action
+            android:id="@+id/action_manfaatMeditasiFragment_to_konsetasiFragment"
+            app:destination="@id/konsetasiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/praktikMeditasiFragment"
+        android:name="com.griding.pentaapsida.PraktikMeditasiFragment"
+        android:label="fragment_praktik_meditasi"
+        tools:layout="@layout/fragment_praktik_meditasi" />
+    <fragment
+        android:id="@+id/konsetasiFragment"
+        android:name="com.griding.pentaapsida.KonsetasiFragment"
+        android:label="fragment_konsetasi"
+        tools:layout="@layout/fragment_konsetasi" />
+    <fragment
+        android:id="@+id/kesadaranFragment"
+        android:name="com.griding.pentaapsida.KesadaranFragment"
+        android:label="fragment_kesadaran"
+        tools:layout="@layout/fragment_kesadaran" />
+    <fragment
+        android:id="@+id/kooperatifFragment"
+        android:name="com.griding.pentaapsida.KooperatifFragment"
+        android:label="fragment_kooperatif"
+        tools:layout="@layout/fragment_kooperatif" >
+        <action
+            android:id="@+id/action_kooperatifFragment_to_formKuesionerFragment"
+            app:destination="@id/formKuesionerFragment" />
+        <action
+            android:id="@+id/action_kooperatifFragment_to_tipsFragment"
+            app:destination="@id/tipsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/formKuesionerFragment"
+        android:name="com.griding.pentaapsida.FormKuesionerFragment"
+        android:label="fragment_form_kuesioner"
+        tools:layout="@layout/fragment_form_kuesioner" />
+    <fragment
+        android:id="@+id/tipsFragment"
+        android:name="com.griding.pentaapsida.TipsFragment"
+        android:label="fragment_tips"
+        tools:layout="@layout/fragment_tips" />
+    <fragment
+        android:id="@+id/berdiskusiFragment"
+        android:name="com.griding.pentaapsida.BerdiskusiFragment"
+        android:label="fragment_berdiskusi"
+        tools:layout="@layout/fragment_berdiskusi" />
 </navigation>
