@@ -2,4 +2,22 @@
     <string name="app_name">PentaApsida</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image">image</string>
+    <string name="halo">Halo!</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="motivasi_satu">Jangan biarkan ucapan orang lain menjatuhkan mimpimu. Bungkam mulut mereka dengan prestasimu.</string>
+    <string name="motivasti_dua">Orang bijak belajar ketika mereka bisa. Orang bodoh belajar ketika mereka terpaksa. -Arthur Wellesley</string>
+    <string name="motivasi_tiga">Hiduplah seolah engkau mati besok. Belajarlah seolah engkau hidup selamanya. -Mahatma Gandhi</string>
+    <string name="lihat_semua">Lihat Semua</string>
+    <string name="apa_yang_kamu_cari">Apa yang kamu cari?</string>
+    <string name="yuk_meditasi">Yuk Meditasi</string>
+    <string name="motivasi_harian_buat_kamu">Motivasi harian buat kamu</string>
+    <string name="olahraga">Olahraga</string>
+    <string name="belajar">Belajar</string>
+    <string name="kooperatif">Kooperatif</string>
+    <string name="diskusi">Diskusi</string>
+    <string name="praktik_meditasi">Praktik <br/> Meditasi</string>
+    <string name="manfaat_meditasi">Manfaat<br/> Meditasi</string>
+    <string name="meditasi">Meditasi</string>
+    <string name="desc_meditasi">Meditasi adalah teknik untuk bisa merasakan rileks dan fokus yang secara perlahan dapat mengurangi tekanan dan stres yang ada di pikiran kita.</string>
 </resources>

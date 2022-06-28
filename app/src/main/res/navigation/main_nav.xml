@@ -9,5 +9,14 @@
         android:id="@+id/homepageFragment"
         android:name="com.griding.pentaapsida.HomepageFragment"
         android:label="fragment_homepage"
-        tools:layout="@layout/fragment_homepage" />
+        tools:layout="@layout/fragment_homepage" >
+        <action
+            android:id="@+id/action_homepageFragment_to_meditasiFragment"
+            app:destination="@id/meditasiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/meditasiFragment"
+        android:name="com.griding.pentaapsida.MeditasiFragment"
+        android:label="fragment_meditasi"
+        tools:layout="@layout/fragment_meditasi" />
 </navigation>
