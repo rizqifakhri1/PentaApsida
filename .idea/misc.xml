@@ -25,12 +25,14 @@
         <entry key="..\:/Users/rizqi/AndroidStudioProjects/PentaApsida/app/src/main/res/layout/fragment_praktik_meditasi.xml" value="0.264" />
         <entry key="..\:/Users/rizqi/AndroidStudioProjects/PentaApsida/app/src/main/res/layout/fragment_tips.xml" value="0.264" />
         <entry key="..\:/Users/rizqi/AndroidStudioProjects/PentaApsida/app/src/main/res/layout/rv_motivasi.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/drawable/ic_baseline_pause_24.xml" value="0.288" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_homepage.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_konsetasi.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_list_motivasi.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_manfaat_meditasi.xml" value="0.16109422492401215" />
         <entry key="app/src/main/res/layout/fragment_praktik_meditasi.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_stopwatch.xml" value="0.1838905775075988" />
       </map>
     </option>
   </component>
