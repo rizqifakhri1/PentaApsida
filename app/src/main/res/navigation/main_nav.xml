@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_homepageFragment_to_berdiskusiFragment"
             app:destination="@id/berdiskusiFragment" />
+        <action
+            android:id="@+id/action_homepageFragment_to_listMotivasiFragment"
+            app:destination="@id/listMotivasiFragment" />
     </fragment>
     <fragment
         android:id="@+id/meditasiFragment"
@@ -86,4 +89,9 @@
         android:name="com.griding.pentaapsida.BerdiskusiFragment"
         android:label="fragment_berdiskusi"
         tools:layout="@layout/fragment_berdiskusi" />
+    <fragment
+        android:id="@+id/listMotivasiFragment"
+        android:name="com.griding.pentaapsida.ListMotivasiFragment"
+        android:label="fragment_list_motivasi"
+        tools:layout="@layout/fragment_list_motivasi" />
 </navigation>

@@ -6,12 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.griding.pentaapsida.databinding.FragmentKonsetasiBinding
-import com.griding.pentaapsida.databinding.FragmentManfaatMeditasiBinding
+import com.griding.pentaapsida.databinding.FragmentHomepageBinding
+import com.griding.pentaapsida.databinding.FragmentListMotivasiBinding
 
-class KonsetasiFragment : Fragment() {
+class ListMotivasiFragment : Fragment() {
 
-    private var _binding : FragmentKonsetasiBinding? = null
+    private var _binding: FragmentListMotivasiBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -19,7 +19,7 @@ class KonsetasiFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentKonsetasiBinding.inflate(inflater, container, false)
+        _binding = FragmentListMotivasiBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -29,4 +29,5 @@ class KonsetasiFragment : Fragment() {
             findNavController().popBackStack()
         }
     }
+
 }
