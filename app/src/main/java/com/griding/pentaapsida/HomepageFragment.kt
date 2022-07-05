@@ -46,10 +46,6 @@ class HomepageFragment : Fragment() {
             findNavController().navigate(R.id.action_homepageFragment_to_listMotivasiFragment)
         }
 
-        binding.tvHalo.setOnClickListener {
-            findNavController().navigate(R.id.action_homepageFragment_to_stopwatchFragment)
-        }
-
 
     }
 }

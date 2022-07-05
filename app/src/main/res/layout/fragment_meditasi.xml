@@ -83,8 +83,8 @@
             android:layout_marginEnd="24dp"
             android:layout_width="0dp"
             android:layout_height="200dp"
-            android:layout_marginBottom="60dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@id/timer_Meditasi"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/bg_praktik"
             app:layout_constraintTop_toBottomOf="@id/desc_meditasi"
@@ -152,6 +152,21 @@
             app:layout_constraintStart_toStartOf="@id/bg_praktik"
             app:layout_constraintEnd_toEndOf="@id/bg_praktik"
             app:layout_constraintBottom_toBottomOf="@id/bg_praktik"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/timer_Meditasi"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="Mulai Meditasi"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:backgroundTint="@color/biru_tiga"
+            app:icon="@drawable/ic_baseline_play_arrow_24"
+            app:iconGravity="textStart"
+            app:layout_constraintStart_toStartOf="@id/bg_manfaat_meditasi"
+            app:layout_constraintEnd_toEndOf="@id/bg_praktik"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

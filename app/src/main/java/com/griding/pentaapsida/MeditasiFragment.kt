@@ -37,5 +37,9 @@ class MeditasiFragment : Fragment() {
         binding.btnBack.setOnClickListener {
             findNavController().popBackStack()
         }
+
+        binding.timerMeditasi.setOnClickListener{
+            findNavController().navigate(R.id.action_meditasiFragment_to_stopwatchFragment)
+        }
     }
 }

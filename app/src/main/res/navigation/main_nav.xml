@@ -22,9 +22,6 @@
         <action
             android:id="@+id/action_homepageFragment_to_listMotivasiFragment"
             app:destination="@id/listMotivasiFragment" />
-        <action
-            android:id="@+id/action_homepageFragment_to_stopwatchFragment"
-            app:destination="@id/stopwatchFragment" />
     </fragment>
     <fragment
         android:id="@+id/meditasiFragment"
@@ -37,6 +34,9 @@
         <action
             android:id="@+id/action_meditasiFragment_to_praktikMeditasiFragment"
             app:destination="@id/praktikMeditasiFragment" />
+        <action
+            android:id="@+id/action_meditasiFragment_to_stopwatchFragment"
+            app:destination="@id/stopwatchFragment" />
     </fragment>
     <fragment
         android:id="@+id/manfaatMeditasiFragment"

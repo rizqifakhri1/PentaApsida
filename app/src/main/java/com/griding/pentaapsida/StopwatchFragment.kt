@@ -10,6 +10,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat.getDrawable
+import androidx.navigation.fragment.findNavController
 import com.griding.pentaapsida.databinding.FragmentHomepageBinding
 import com.griding.pentaapsida.databinding.FragmentStopwatchBinding
 import kotlin.math.roundToInt
@@ -34,6 +35,8 @@ class StopwatchFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.btnBack.setOnClickListener { findNavController().popBackStack() }
 
         binding.startStopButton.setOnClickListener { startStopTimer() }
         binding.resetButton.setOnClickListener { resetTimer() }
