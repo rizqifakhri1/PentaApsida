@@ -5,19 +5,28 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import com.griding.pentaapsida.databinding.FragmentBerdiskusiBinding
+import com.griding.pentaapsida.databinding.FragmentHomepageBinding
 
 
 class BerdiskusiFragment : Fragment() {
 
+    private var _binding: FragmentBerdiskusiBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        _binding = FragmentBerdiskusiBinding.inflate(inflater, container, false)
+        return binding.root
+    }
 
-
-        return inflater.inflate(R.layout.fragment_berdiskusi, container, false)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.btnBack.setOnClickListener { findNavController().popBackStack() }
     }
 
 }

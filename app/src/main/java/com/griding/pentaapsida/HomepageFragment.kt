@@ -46,6 +46,13 @@ class HomepageFragment : Fragment() {
             findNavController().navigate(R.id.action_homepageFragment_to_listMotivasiFragment)
         }
 
+        binding.bgOlahraga.setOnClickListener {
+            findNavController().navigate(R.id.action_homepageFragment_to_olahragaFragment)
+        }
+
+        binding.bgBelajar.setOnClickListener {
+            findNavController().navigate(R.id.action_homepageFragment_to_belajarFragment)
+        }
 
     }
 }

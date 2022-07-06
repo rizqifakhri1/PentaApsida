@@ -22,6 +22,12 @@
         <action
             android:id="@+id/action_homepageFragment_to_listMotivasiFragment"
             app:destination="@id/listMotivasiFragment" />
+        <action
+            android:id="@+id/action_homepageFragment_to_olahragaFragment"
+            app:destination="@id/olahragaFragment" />
+        <action
+            android:id="@+id/action_homepageFragment_to_belajarFragment"
+            app:destination="@id/belajarFragment" />
     </fragment>
     <fragment
         android:id="@+id/meditasiFragment"
@@ -102,4 +108,31 @@
         android:name="com.griding.pentaapsida.StopwatchFragment"
         android:label="fragment_stopwatch"
         tools:layout="@layout/fragment_stopwatch" />
+    <fragment
+        android:id="@+id/belajarFragment"
+        android:name="com.griding.pentaapsida.BelajarFragment"
+        android:label="fragment_belajar"
+        tools:layout="@layout/fragment_belajar" />
+    <fragment
+        android:id="@+id/cyclingFragment"
+        android:name="com.griding.pentaapsida.CyclingFragment"
+        android:label="fragment_cycling"
+        tools:layout="@layout/fragment_cycling" />
+    <fragment
+        android:id="@+id/jogingFragment"
+        android:name="com.griding.pentaapsida.JogingFragment"
+        android:label="fragment_joging"
+        tools:layout="@layout/fragment_joging" />
+    <fragment
+        android:id="@+id/olahragaFragment"
+        android:name="com.griding.pentaapsida.OlahragaFragment"
+        android:label="fragment_olahraga"
+        tools:layout="@layout/fragment_olahraga" >
+        <action
+            android:id="@+id/action_olahragaFragment_to_jogingFragment"
+            app:destination="@id/jogingFragment" />
+        <action
+            android:id="@+id/action_olahragaFragment_to_cyclingFragment"
+            app:destination="@id/cyclingFragment" />
+    </fragment>
 </navigation>

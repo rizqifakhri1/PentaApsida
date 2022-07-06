@@ -28,8 +28,11 @@
         <entry key="app/src/main/res/drawable/custom_button.xml" value="0.288" />
         <entry key="app/src/main/res/drawable/ic_baseline_pause_24.xml" value="0.288" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_belajar.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/fragment_form_kuesioner.xml" value="0.29257246376811596" />
         <entry key="app/src/main/res/layout/fragment_homepage.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_konsetasi.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_kuesioner.xml" value="0.16" />
         <entry key="app/src/main/res/layout/fragment_list_motivasi.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_manfaat_meditasi.xml" value="0.16109422492401215" />
         <entry key="app/src/main/res/layout/fragment_meditasi.xml" value="0.2" />
