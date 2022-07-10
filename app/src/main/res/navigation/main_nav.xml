@@ -117,12 +117,20 @@
         android:id="@+id/cyclingFragment"
         android:name="com.griding.pentaapsida.CyclingFragment"
         android:label="fragment_cycling"
-        tools:layout="@layout/fragment_cycling" />
+        tools:layout="@layout/fragment_cycling" >
+        <action
+            android:id="@+id/action_cyclingFragment_to_timerCyclingFragment"
+            app:destination="@id/timerCyclingFragment" />
+    </fragment>
     <fragment
         android:id="@+id/jogingFragment"
         android:name="com.griding.pentaapsida.JogingFragment"
         android:label="fragment_joging"
-        tools:layout="@layout/fragment_joging" />
+        tools:layout="@layout/fragment_joging" >
+        <action
+            android:id="@+id/action_jogingFragment_to_TImerJogingFragment"
+            app:destination="@id/TImerJogingFragment" />
+    </fragment>
     <fragment
         android:id="@+id/olahragaFragment"
         android:name="com.griding.pentaapsida.OlahragaFragment"
@@ -135,4 +143,14 @@
             android:id="@+id/action_olahragaFragment_to_cyclingFragment"
             app:destination="@id/cyclingFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/timerCyclingFragment"
+        android:name="com.griding.pentaapsida.TimerCyclingFragment"
+        android:label="fragment_timer_cycling"
+        tools:layout="@layout/fragment_timer_cycling" />
+    <fragment
+        android:id="@+id/TImerJogingFragment"
+        android:name="com.griding.pentaapsida.TImerJogingFragment"
+        android:label="fragment_t_imer_joging"
+        tools:layout="@layout/fragment_t_imer_joging" />
 </navigation>
